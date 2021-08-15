@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Calculation</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <h1 class="text-3xl text-center my-16">Bank <span class="font-medium text-indigo-600">Asia History</span> Portal</h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <section class="grid grid-cols-3 text-white gap-4 my-16">
+            <div class="bg-green-400 px-8 py-4 rounded">
+                <p class="text-2xl">Deposit</p>
+                <h3 class="text-4xl">$<span id="deposit-total">0.00</span></h3>
+            </div>
+            <div class="bg-red-400 px-8 py-4 rounded">
+                <p class="text-2xl">Withdraw</p>
+                <h3 class="text-4xl">$<span id="withdraw-total">0.00</span></h3>
+            </div>
+            <div class="bg-blue-400 px-8 py-4 rounded">
+                <p class="text-2xl">Total Balance</p>
+                <h3 class="text-4xl">$<span id="balance-total">1250.00</span></h3>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 gap-4 text-white">
+            <div class="bg-indigo-400 p-8 rounded">
+                <h3 class="text-2xl font-bold">Deposit Amount</h3>
+                <input type="text" name="" id="deposit-input" class="block w-3/4 rounded px-2 my-2    text-black" placeholder="your email">
+                <button id="deposite-update-button" class="bg-red-500 px-4 py-2 rounded font-medium">Deposit</button>
+            </div>
+            <div class="bg-purple-400 p-8 rounded">
+                <h3 class="text-2xl font-bold text-white">Withdraw Amount</h3>
+                <input type="text" name="" id="withdraw-input" class="block w-3/4 rounded px-2 my-2    text-black" placeholder="your email">
+                <button id="withdraw-update-button" class="bg-red-500 px-4 py-2 rounded font-medium">Withdraw</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/banking.js"></script>
+</body>
+</html>
